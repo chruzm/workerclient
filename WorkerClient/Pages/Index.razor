@@ -1,0 +1,102 @@
+@page "/"
+@using WorkerClient.Models
+@using Client.Data
+@using System.Text.Json
+@using System.Collections.ObjectModel
+@inject ITest tst
+<h3>Orders</h3>
+@if (orders == null) {
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else if (!orders.Any()) {
+    <p>
+        <em>loading menu.....</em>
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>items</th>
+            <th>adress</th>
+            <th>
+                <h7 style="color:tomato;">
+                    🗑️
+                </h7>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in orders)
+        {
+            <tr>
+                <td>
+                    <button class="btn" @onclick="() => Ding()">
+                        @item.items
+                    </button>
+                </td>
+                <td>
+                    <button class="btn" @onclick="() => Ding()">
+                        @item.adr
+                    </button>
+                </td>
+                <td>
+                    <button class="btn" @onclick="() => Ding()">
+                        <h7 style="color:tomato;">
+                            -remove-
+                        </h7>
+                    </button>
+                </td>
+                <!--<td>/td>-->
+                <td>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+
+
+
+@code {
+    private static string listuri = "http://localhost:8080/orders/";
+    private static int x = 0;
+    static OrderObject oItem = new OrderObject();
+    IList<OrderObject> orders = new Collection<OrderObject>();
+    OrderObject o = new OrderObject();
+
+    
+    protected override async Task OnInitializedAsync()
+    {
+        
+    //orderes.Clear();
+        /*for (int x = 1;tst.ReceiveOrdersAsync(x) != null; x++)
+        {
+            orders.Add(await tst.ReceiveOrdersAsync(x));
+        }*/
+
+        try {
+            if (tst.ReceiveOrdersAsync(x) != null)
+            {
+                for (int x = 0; tst.ReceiveOrdersAsync(x) != null; x++)
+                {
+                    orders.Add(await tst.ReceiveOrdersAsync(x));
+                }
+                
+            }
+            
+        }catch(Exception e){}
+        
+    }
+
+
+    public void Ding()
+    {
+
+    }
+
+}
+}
