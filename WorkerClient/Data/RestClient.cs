@@ -23,7 +23,7 @@ namespace WorkerClient.Data
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             });
-            Console.WriteLine(item.adr);
+            //Console.WriteLine(item.adr);
             return item ;
         }
     }
