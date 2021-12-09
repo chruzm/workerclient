@@ -144,7 +144,7 @@ using System.Collections.ObjectModel;
                     Console.WriteLine("x i loop: "+x);
                     orders.Add(await tst.ReceiveOrdersAsync(x));
                 }
-            
+            orders.RemoveAt(0);
         }
         catch(Exception e){}
         Console.WriteLine(orders.Count);
