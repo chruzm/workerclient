@@ -154,17 +154,22 @@ using System.Collections.ObjectModel;
     public async Task Ding()
     {
         orders.Clear();
+        orders.Add(await tst.ReceiveOrdersAsync(0));
+    /*for (int x = 1;tst.ReceiveOrdersAsync(x) != null; x++)
+        {
+            orders.Add(await tst.ReceiveOrdersAsync(x));
+        }*/
+        
         try {
-            if (tst.ReceiveOrdersAsync(x) != null)
+            for (int x = 0; x < orders[0].ordernumber ; x++)
             {
-                for (int x = 0; tst.ReceiveOrdersAsync(x) != null; x++)
-                {
-                    orders.Add(await tst.ReceiveOrdersAsync(x));
-                }
-                
+                Console.WriteLine(orders[0].adr);
+                Console.WriteLine("x i loop: "+x);
+                orders.Add(await tst.ReceiveOrdersAsync(x));
             }
-            
-        }catch(Exception e){}
+        }
+        catch(Exception e){}
+        Console.WriteLine(orders.Count);
     }
 
     public void Dong()
