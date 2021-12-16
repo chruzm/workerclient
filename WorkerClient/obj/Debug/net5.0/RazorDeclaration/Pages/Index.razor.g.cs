@@ -119,64 +119,29 @@ using System.Collections.ObjectModel;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 63 "C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\Pages\Index.razor"
+#line 57 "C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\Pages\Index.razor"
        
     private static string listuri = "http://localhost:8080/orders/";
     private static int x = 0;
-    static OrderObject oItem = new OrderObject();
     static IList<OrderObject> orders = new Collection<OrderObject>();
-    OrderObject o = new OrderObject();
 
-    
+
     protected override async Task OnInitializedAsync()
     {
         orders.Clear();
         orders.Add(await tst.ReceiveOrdersAsync(0));
-    /*for (int x = 1;tst.ReceiveOrdersAsync(x) != null; x++)
-        {
-            orders.Add(await tst.ReceiveOrdersAsync(x));
-        }*/
-        
+
         try {
             for (int x = 0; x < orders[0].ordernumber ; x++)
                 {
-                    Console.WriteLine(orders[0].adr);
-                    Console.WriteLine("x i loop: "+x);
                     orders.Add(await tst.ReceiveOrdersAsync(x));
                 }
             orders.RemoveAt(0);
+            Console.WriteLine(orders[0].phone);
         }
         catch(Exception e){}
         Console.WriteLine(orders.Count);
     }
-
-
-    public async Task Ding()
-    {
-        orders.Clear();
-        orders.Add(await tst.ReceiveOrdersAsync(0));
-    /*for (int x = 1;tst.ReceiveOrdersAsync(x) != null; x++)
-        {
-            orders.Add(await tst.ReceiveOrdersAsync(x));
-        }*/
-        
-        try {
-            for (int x = 0; x < orders[0].ordernumber ; x++)
-            {
-                Console.WriteLine(orders[0].adr);
-                Console.WriteLine("x i loop: "+x);
-                orders.Add(await tst.ReceiveOrdersAsync(x));
-            }
-        }
-        catch(Exception e){}
-        Console.WriteLine(orders.Count);
-    }
-
-    public void Dong()
-    {
-        
-    }
-
 
 #line default
 #line hidden

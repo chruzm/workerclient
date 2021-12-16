@@ -22,7 +22,6 @@ C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\RazorDe
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
-C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\WorkerClient.RazorComponent.output.cache
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\RazorDeclaration\WorkerClient.dll
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\WorkerClient.TagHelpers.input.cache
@@ -33,7 +32,6 @@ C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\Razor\P
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
-C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\WorkerClient.RazorAssemblyInfo.cache
@@ -41,7 +39,6 @@ C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\WorkerC
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\staticwebassets\WorkerClient.StaticWebAssets.Manifest.cache
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\staticwebassets\WorkerClient.StaticWebAssets.xml
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\scopedcss\bundle\WorkerClient.styles.css
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\scopedcss\projectbundle\WorkerClient.bundle.scp.css
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\WorkerClient.RazorTargetAssemblyInfo.cache
@@ -52,5 +49,3 @@ C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\ref\Wor
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\WorkerClient.pdb
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\WorkerClient.genruntimeconfig.cache
 C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\WorkerClient.csproj.CopyComplete
-C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\RazorDeclaration\Pages\Orders.razor.g.cs
-C:\Users\Bruger\RiderProjects\WorkerClient\WorkerClient\obj\Debug\net5.0\Razor\Pages\Orders.razor.g.cs
